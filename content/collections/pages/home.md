@@ -2,8 +2,8 @@
 id: home
 blueprint: page
 title: Home
-updated_by: ceaa75bd-bc37-4a8b-b0f2-b7af70e58b0e
-updated_at: 1693487994
+updated_by: 926c13b3-0f0b-4e56-9d58-e424bd46b115
+updated_at: 1732225502
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -104,4 +104,6 @@ page_builder:
             target_blank: true
             url: 'https://peak.1902.studio'
             button_type: inline
+seo_title: 'DIY, Dekoration & Inspiration für ein schönes Zuhause'
+seo_description: 'Entdecke kreative DIY-Ideen, stilvolle Dekorations-Tipps und Inspirationen für ein harmonisches Zuhause. Handmade Vibes – Dein Blog für Kreativität und Familienglück.'
 ---

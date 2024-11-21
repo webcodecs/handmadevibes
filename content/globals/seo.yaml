@@ -1,22 +1,31 @@
 title: SEO
 data:
-  title_separator: ·
   noindex_local: true
   noindex_staging: true
   noindex_production: false
+  title_separator: '::'
   hreflang_auto: true
   json_ld_type: none
-  breadcrumbs: false
-  use_social_image_generation: false
+  breadcrumbs: true
+  use_social_image_generation: true
+  social_images_collections:
+    - posts
+  use_no_sandbox_for_social_image_generation: false
   use_sitemap: true
   sitemap_collections:
     - pages
+    - posts
   trackers_local: false
   trackers_staging: false
   trackers_production: true
   use_google_site_verification: false
   use_fathom: false
+  use_matomo: false
   use_plausible: false
   use_cloudflare_web_analytics: false
-  tracker_type: none
-  use_consent_banner: false
+  tracker_type: gtag
+  google_analytics: G-NS3D6S16R5
+  anonymize_ip: true
+  use_consent_banner: true
+  embeds: false
+  display_style: left
