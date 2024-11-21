@@ -16,6 +16,11 @@ tabs:
             field:
               type: markdown
               localizable: true
+      -
+        display: 'Page Builder'
+        fields:
+          -
+            import: page_builder
   sidebar:
     display: Sidebar
     sections:
