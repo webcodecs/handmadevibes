@@ -2,8 +2,8 @@
 id: a9d2d099-54fc-46bd-a82b-8a958d98c92a
 blueprint: post
 title: "10 Fun Kids Crafts That'll Keep Them Busy for Hours (and You Too!)"
-updated_by: a4a90201-991c-4794-af50-2187ddb764c1
-updated_at: 1732229694
+updated_by: 926c13b3-0f0b-4e56-9d58-e424bd46b115
+updated_at: 1732230883
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -295,4 +295,15 @@ page_builder:
             text: 'These 10 fun kids crafts offer endless opportunities for creativity and bonding time. Whether you’re painting, building, or crafting together, these activities will surely keep your kids engaged while creating lasting memories. So grab those supplies, get crafty, and let the fun begin!'
     type: article
     enabled: true
+seo_title: "10 Fun Kids Crafts That'll Keep Them Busy for Hours (and You Too!)"
+seo_description: |-
+  Looking for creative ways to keep the kids entertained?
+
+  Check out these 18 fun kids crafts that will spark their imagination and keep them busy for hours!
+
+  From easy DIY projects to unique craft ideas, there's something for every little artist.
+
+  You might even find yourself joining in on the fun!
+
+  Click to discover all the crafty goodness and get ready for some quality family time!
 ---
