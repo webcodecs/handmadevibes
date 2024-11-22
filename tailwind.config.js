@@ -14,22 +14,31 @@ import siteConfig from './tailwind.config.site.js';
 
 /** @type {import('tailwindcss').Config} */
 export default {
-  // The various configurable Tailwind configuration files.
-  presets: [
-    defaultConfig,
-    typographyConfig,
-    peakConfig,
-    siteConfig
-  ],
-  // Configure files to scan for utility classes (JIT).
-  content: [
-    './resources/views/**/*.blade.php',
-    './resources/views/**/*.html',
-    './resources/js/**/*.js',
-    './content/**/*.md',
-    './vendor/studio1902/**/*.blade.php',
-    './vendor/studio1902/**/*.html',
-    './vendor/studio1902/**/*.js',
-  ],
-  safelist: []
+    // The various configurable Tailwind configuration files.
+    presets: [
+        defaultConfig,
+        typographyConfig,
+        peakConfig,
+        siteConfig
+    ],
+    // Configure files to scan for utility classes (JIT).
+    content: [
+        './resources/views/**/*.blade.php',
+        './resources/views/**/*.html',
+        './resources/js/**/*.js',
+        './content/**/*.md',
+        './vendor/studio1902/**/*.blade.php',
+        './vendor/studio1902/**/*.html',
+        './vendor/studio1902/**/*.js',
+    ],
+    theme: {
+        colors: {
+            shadywhite: '#f1f2ed',
+            winered: '#945558'
+        },
+        fontFamily: {
+            'sans': ['"Playfair Display"']
+        }
+    },
+    safelist: []
 }

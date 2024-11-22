@@ -1,0 +1,7 @@
+<nav class="flex justify-center space-x-6" aria-label="{{ trans:strings.footer_navigation }}">
+    {{ nav:footer max_depth="1" include_home="false" select="title|url" }}
+    {{ unless no_results }}
+    <a href="{{ url }}" class="hover:underline focus:outline-none focus:underline text-sm leading-5">{{ title }}</a>
+    {{ /unless }}
+    {{ /nav:footer }}
+</nav>

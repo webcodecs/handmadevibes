@@ -42,6 +42,7 @@ return [
     // Navigation
     'close' => 'Schließen',
     'main_navigation' => 'Hauptnavigation',
+    'footer_navigation' => 'Schlussnavigation',
     'menu' => 'Menü',
     'nav_close' => 'Navigation schließen',
     'nav_open' => 'Navigation öffnen',
