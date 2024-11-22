@@ -23,9 +23,8 @@ data:
   use_matomo: false
   use_plausible: false
   use_cloudflare_web_analytics: false
-  tracker_type: gtag
-  google_analytics: G-NS3D6S16R5
-  anonymize_ip: true
+  tracker_type: gtm
+  google_tag_manager: G-NS3D6S16R5
   use_consent_banner: true
   embeds: false
   display_style: left
