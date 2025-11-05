@@ -1,4 +1,7 @@
 @import "tailwindcss/base";
 @import "custom";
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";

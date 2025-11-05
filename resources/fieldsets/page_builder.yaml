@@ -30,6 +30,13 @@ fields:
               fields:
                 -
                   import: cards
+            article_slider:
+              display: 'Article Slider'
+              instructions: 'Display a slider/carousel of articles from a collection.'
+              icon: media-image-list
+              fields:
+                -
+                  import: article_slider
         text:
           display: Text
           instructions: 'Text based blocks.'
