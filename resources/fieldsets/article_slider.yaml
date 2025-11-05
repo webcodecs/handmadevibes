@@ -1,0 +1,52 @@
+title: 'Article Slider'
+fields:
+  -
+    handle: title
+    field:
+      type: text
+      localizable: true
+      display: Title
+      instructions: 'Optional title for the article slider section.'
+  -
+    handle: article_count
+    field:
+      type: integer
+      localizable: false
+      display: 'Number of Articles'
+      instructions: 'How many articles to display in the slider.'
+      default: 6
+      validate: 'required|integer|min:1|max:20'
+  -
+    handle: collection
+    field:
+      type: collections
+      localizable: false
+      display: Collection
+      instructions: 'Select which collection to pull articles from.'
+      default: posts
+      max_items: 1
+      mode: select
+  -
+    handle: show_excerpt
+    field:
+      type: toggle
+      localizable: false
+      display: 'Show Excerpt'
+      instructions: 'Display article excerpt in the slider.'
+      default: true
+  -
+    handle: show_date
+    field:
+      type: toggle
+      localizable: false
+      display: 'Show Date'
+      instructions: 'Display article publish date.'
+      default: true
+  -
+    handle: show_image
+    field:
+      type: toggle
+      localizable: false
+      display: 'Show Featured Image'
+      instructions: 'Display the article featured image if available.'
+      default: true

@@ -1,0 +1,85 @@
+{{#
+    @name Article Slider
+    @desc The Article Slider page builder block.
+    @set page.page_builder.article_slider
+#}}
+
+<!-- /page_builder/_article_slider.antlers.html -->
+{{ partial:page_builder/block }}
+    <div class="span-content">
+        {{ block:title ?= { partial:typography/h2 :content="block:title" class="mb-8 text-center" } }}
+
+        <div class="relative">
+            <!-- Swiper Container -->
+            <div class="swiper article-swiper overflow-hidden">
+                <div class="swiper-wrapper">
+                    {{ collection from="{block:collection ?? 'posts'}" limit="{block:article_count ?? 6}" sort="date:desc" }}
+                        <div class="swiper-slide">
+                            <article class="flex flex-col h-full border border-neutral/10 shadow-lg rounded overflow-hidden bg-white">
+                                {{ if block:show_image && featured_image }}
+                                    <a href="{{ url }}" class="block aspect-[16/9] overflow-hidden">
+                                        <img
+                                            src="{{ featured_image }}"
+                                            alt="{{ title }}"
+                                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                                            loading="lazy"
+                                        />
+                                    </a>
+                                {{ /if }}
+
+                                <div class="flex flex-col flex-grow p-6">
+                                    {{ if block:show_date }}
+                                        <time datetime="{{ date format="Y-m-d" }}" class="text-sm text-neutral/60 mb-2">
+                                            {{ date format="F j, Y" }}
+                                        </time>
+                                    {{ /if }}
+
+                                    <a href="{{ url }}" class="group">
+                                        {{ partial:typography/h3
+                                            :content="title"
+                                            class="mb-3 group-hover:underline"
+                                        }}
+                                    </a>
+
+                                    {{ if block:show_excerpt }}
+                                        {{ if excerpt }}
+                                            {{ partial:typography/p
+                                                :content="excerpt"
+                                                class="text-neutral/80 line-clamp-3 mb-4"
+                                            }}
+                                        {{ else }}
+                                            {{ partial:typography/p
+                                                :content="{ content | strip_tags | trim | truncate:150 }"
+                                                class="text-neutral/80 line-clamp-3 mb-4"
+                                            }}
+                                        {{ /if }}
+                                    {{ /if }}
+
+                                    <div class="mt-auto pt-4">
+                                        <a
+                                            href="{{ url }}"
+                                            class="inline-flex items-center text-sm font-medium text-primary hover:underline"
+                                        >
+                                            Read More
+                                            <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    {{ /collection }}
+                </div>
+
+                <!-- Navigation Buttons -->
+                <div class="swiper-button-prev !hidden md:!flex"></div>
+                <div class="swiper-button-next !hidden md:!flex"></div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination mt-8"></div>
+        </div>
+    </div>
+{{ /partial:page_builder/block }}
+<!-- End: /page_builder/_article_slider.antlers.html -->
